@@ -1,0 +1,10 @@
+version: '3'
+services:
+    symfony-starter:
+        build:
+            dockerfile: ../Dockerfile
+            context: .
+        ports:
+            - 8008:80
+        volumes:
+            - ../:/var/www
